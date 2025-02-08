@@ -1,0 +1,35 @@
+:root {
+  --lavender: #E7D0FF; /* Background */
+  --red: #D60000; /* Accent 1 */
+  --purple: #9B2D8C; /* Accent 2 */
+  --charcoal: #333333; /* Text */
+  --pink: #F77F7F; /* Highlight */
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  background-color: var(--lavender);
+}
+.color-scheme {
+  list-style: none;
+  padding: 5px;
+  text-align: center;
+}
+
+.lavender {
+  border: 1px solid var(--charcoal);
+  color: var(--charcoal);
+}
+.red {
+  color: var(--red);
+}
+.purple {
+  color: var(--purple);
+}
+.charcoal {
+  color: var(--charcoal);
+}
+.pink {
+  color: var(--pink);
+}
