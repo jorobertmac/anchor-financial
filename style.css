@@ -1,9 +1,9 @@
 :root {
-  --lavender: #E7D0FF; /* Background */
-  --red: #D60000; /* Accent 1 */
-  --purple: #9B2D8C; /* Accent 2 */
+  --lavender: #e7d0ff; /* Background */
+  --red: #d60000; /* Accent 1 */
+  --purple: #9b2d8c; /* Accent 2 */
   --charcoal: #333333; /* Text */
-  --pink: #F77F7F; /* Highlight */
+  --pink: #f77f7f; /* Highlight */
 }
 
 * {
@@ -15,7 +15,83 @@
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 16px;
+  color: var(--charcoal);
   background-color: var(--lavender);
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+}
+
+header, footer, .main {
+  padding: 0 5%;
+}
+.break {
+  flex: 1.5;
+}
+
+.logo img {
+  width: 100px;
+  height: 50px;
+}
+
+.hero-photo img {
+  width: 300px;
+  height: 200px;
+}
+
+.card img {
+  width: 100px;
+  border: 5px solid var(--pink);
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--red);
+}
+
+a:active {
+  color: var(--pink);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--purple);
+  color: var(--lavender);
+  padding: 0 5%;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  padding: 10px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  gap: 20px;
+  flex: 2;
+  justify-content: end;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5%;
 }
