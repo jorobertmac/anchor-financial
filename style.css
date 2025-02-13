@@ -4,6 +4,12 @@
   --purple: #9b2d8c; /* Accent 2 */
   --charcoal: #333333; /* Text */
   --pink: #f77f7f; /* Highlight */
+
+  --main: #1D3557; /* Background */
+  --accent1: #F4F4F4; /* Accent 1 */
+  --accent2: #E9C46A; /* Accent 2 */
+  --text: #E8D8C4; /* Text */
+  --highlight: #457B9D; /* Highlight */
 }
 
 * {
@@ -18,8 +24,8 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 16px;
-  color: var(--charcoal);
-  background-color: var(--lavender);
+  color: var(--text);
+  background-color: var(--main);
   display: flex;
   flex-direction: column;
   margin: 0px;
@@ -48,7 +54,7 @@ header, footer, .main {
 
 .card img {
   width: 100px;
-  border: 5px solid var(--pink);
+  border: 5px solid var(--highlight);
   border-radius: 10px;
 }
 
@@ -58,18 +64,18 @@ a {
 }
 
 a:hover {
-  color: var(--red);
+  color: var(--accent1);
 }
 
 a:active {
-  color: var(--pink);
+  color: var(--highlight);
 }
 
 header {
   display: flex;
   flex-direction: column;
-  background-color: var(--purple);
-  color: var(--lavender);
+  background-color: var(--accent2);
+  color: var(--main);
   padding: 0 5%;
 }
 nav{
