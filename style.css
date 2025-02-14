@@ -16,9 +16,9 @@
   box-sizing: border-box;
 }
 
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -38,9 +38,6 @@ body {
 header, footer, .main {
   padding: 0 5%;
 }
-.break {
-  flex: 1.5;
-}
 
 .logo img {
   width: 100px;
@@ -50,12 +47,6 @@ header, footer, .main {
 .hero-photo img {
   width: 300px;
   height: 200px;
-}
-
-.card img {
-  width: 100px;
-  border: 5px solid var(--highlight);
-  border-radius: 10px;
 }
 
 a {
@@ -100,4 +91,42 @@ nav{
   display: flex;
   justify-content: space-evenly;
   margin: 5%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  }
+.cards li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+  }
+
+.card img {
+  width: 100px;
+  border: 5px solid var(--highlight);
+  border-radius: 10px;
+}
+
+.cards li p {
+  text-align: center;
+}
+
+.path{
+  min-width: max-content;
+}
+
+.quote {
+  max-width: 70%;
 }
