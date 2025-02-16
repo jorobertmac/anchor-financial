@@ -143,6 +143,15 @@ nav{
   background-color: var(--highlight);
 }
 
+.cta {
+  display: flex;
+  align-items: center;
+  background-color: var(--accent1);
+  color: var(--main);
+  padding: 0 20px;
+  border-radius: 15px;
+}
+
 footer {
   text-align: center;
   padding: 10px;
