@@ -102,7 +102,6 @@ nav{
   display: flex;
   list-style: none;
   padding: 10px;
-  gap: 20px;
   flex: 2;
   justify-content: end;
 }
