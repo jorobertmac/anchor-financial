@@ -134,6 +134,14 @@ nav{
   text-align: justify;
   padding: 0 10px;
 }
+.success-stories-link{
+  text-align: center;
+  }
+.success-stories-link a {
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: var(--highlight);
+}
 
 footer {
   text-align: center;
