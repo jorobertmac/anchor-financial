@@ -129,6 +129,10 @@ nav{
 
 .quote {
   max-width: 70%;
+  border: 5px solid var(--highlight);
+  border-radius: 10px;
+  text-align: justify;
+  padding: 0 10px;
 }
 
 footer {
