@@ -130,3 +130,10 @@ nav{
 .quote {
   max-width: 70%;
 }
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--accent2);
+  color: var(--main);
+}
