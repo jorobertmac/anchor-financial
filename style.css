@@ -29,17 +29,34 @@ body {
   height: 100vh;
 }
 
+button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--main);
+  background-color: var(--highlight);
+  color: var(--text);
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--accent2);
+}
+
+button:active {
+  color: var(--main);
+}
+
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--text);
 }
 
 a:hover {
-  color: var(--accent1);
+  color: var(--accent2);
 }
 
 a:active {
-  color: var(--highlight);
+  color: var(--main);
 }
 
 header, footer, .main {
@@ -59,6 +76,13 @@ nav{
   align-items: center;
 }
 
+.nav-list a {
+  padding: 5px 10px;
+  border: 1px solid var(--main);
+  background-color: var(--highlight);
+  border-radius: 10px;
+}
+
 .header-link {
   padding: 10px;
 }
@@ -66,6 +90,12 @@ nav{
 .logo img {
   width: 100px;
   height: 50px;
+  border: 2px solid var(--highlight);
+  border-radius: 5px;
+}
+
+.logo:hover img {
+  border-color: var(--main);
 }
 
 .nav-list {
@@ -114,6 +144,10 @@ nav{
   border-radius: 10px;
 }
 
+.card:hover img {
+  border-color: var(--accent2);
+}
+
 .cards li p {
   text-align: center;
 }
@@ -151,5 +185,18 @@ footer {
   text-align: center;
   padding: 10px;
   background-color: var(--accent2);
+  color: var(--main);
+}
+
+footer a {
+  cursor: inherit;
+  color: var(--main);
+}
+
+ footer a:hover {
+  color: var(--main);
+ }
+
+ footer a:active {
   color: var(--main);
 }
